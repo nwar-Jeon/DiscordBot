@@ -1,7 +1,8 @@
 import net.dv8tion.jda.api.JDABuilder
 
 fun main() {
-    val jda = JDABuilder.createDefault("ODA3MTI1NDI2MDMxNTU4Njk3.YBzcIQ.lfPpru2UJiU95CcUc2byALpAW9Y").build()
+    print("토큰 입력 : ")
+    val jda = JDABuilder.createDefault(readLine()).build()
 
     jda.addEventListener(Starter())
 }
